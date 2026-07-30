@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyCRM.Models;
 using System.Diagnostics;
 
 namespace MyCRM.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()
