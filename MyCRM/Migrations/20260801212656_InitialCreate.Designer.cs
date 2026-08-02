@@ -11,7 +11,7 @@ using MyCRM.Data;
 
 namespace MyCRM.Migrations
 {
-    [DbContext(typeof(AppDbContectcs))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20260801212656_InitialCreate")]
     partial class InitialCreate
     {

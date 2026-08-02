@@ -10,8 +10,8 @@ using MyCRM.Data;
 
 namespace MyCRM.Migrations
 {
-    [DbContext(typeof(AppDbContectcs))]
-    partial class AppDbContectcsModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AppDbContext))]
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

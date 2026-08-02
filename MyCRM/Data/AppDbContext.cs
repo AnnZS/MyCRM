@@ -4,13 +4,13 @@ using MyCRM.Models;
 
 namespace MyCRM.Data
 {
-    public class AppDbContectcs : IdentityDbContext<Users>
+    public class AppDbContext : IdentityDbContext<Users>
     {
-        public AppDbContectcs(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
 
-        protected AppDbContectcs()
+        protected AppDbContext()
         {
         }
     }
