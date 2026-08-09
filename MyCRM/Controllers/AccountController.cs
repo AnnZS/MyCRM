@@ -89,6 +89,7 @@ namespace MyCRM.Controllers
 
             if (result.Succeeded)
             {
+                //Log in immediately after registration
                 await _signInManager.SignInAsync(user, isPersistent: false);
                 return RedirectToAction("Index", "Home");
             }
