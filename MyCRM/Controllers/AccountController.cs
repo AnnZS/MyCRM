@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using MyCRM.Models;
 using MyCRM.ViewModels;
 using System.Threading.Tasks;
+using System.Reflection.Metadata.Ecma335;
 
 namespace MyCRM.Controllers
 {
@@ -47,7 +48,7 @@ namespace MyCRM.Controllers
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                     return Redirect(returnUrl);
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home");   //After suceed, redirect to the homepage
             }
 
             ModelState.AddModelError(string.Empty, "Invalid login attempt.");
@@ -59,7 +60,7 @@ namespace MyCRM.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home");   //Redirect
         }
 
         //Registration--------------------------------------------------------
@@ -81,7 +82,8 @@ namespace MyCRM.Controllers
             var user = new Users
             {
                 UserName = model.Email,
-                Email = model.Email
+                Email = model.Email,
+                FullName = model.Name
                 //For security reasons, the password is not stored here (UserManager!!)
             };
 
@@ -90,14 +92,14 @@ namespace MyCRM.Controllers
             if (result.Succeeded)
             {
                 //Log in immediately after registration
-                await _signInManager.SignInAsync(user, isPersistent: false);
+                //await _signInManager.SignInAsync(user, isPersistent: false);
                 return RedirectToAction("Index", "Home");
             }
 
             //If registration fails, add model error
             foreach (var error in result.Errors)
             {
-                ModelState.AddModelError(string.Empty, error.Description);
+                ModelState.AddModelError(string.Empty, "Something went wrong");//error.Description);
             }
 
             return View(model);
