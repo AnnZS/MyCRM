@@ -21,7 +21,7 @@ namespace MyCRM.Controllers
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
         {
-            ViewData["ReturnUrl"] = returnUrl;
+            ViewData["ReturnUrl"] = returnUrl;  //Remember and return to the page after login
             return View();
         }
 
@@ -103,6 +103,13 @@ namespace MyCRM.Controllers
             }
 
             return View(model);
+        }
+
+        //Verify----------------------------------------------------------
+
+        public IActionResult VerifyEmail()
+        {
+            return View();
         }
     }
 }
