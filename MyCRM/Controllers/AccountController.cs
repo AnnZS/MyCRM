@@ -4,6 +4,7 @@ using MyCRM.Models;
 using MyCRM.ViewModels;
 using System.Threading.Tasks;
 using System.Reflection.Metadata.Ecma335;
+using MyCRM.Email;
 
 namespace MyCRM.Controllers
 {
@@ -11,11 +12,13 @@ namespace MyCRM.Controllers
     {
         private readonly SignInManager<Users> _signInManager;
         private readonly UserManager<Users> _userManager;
+        private readonly IEmailSender _emailSender;
 
-        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager)
+        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager, IEmailSender emailSender)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _emailSender = emailSender;
         }
 
         [HttpGet]
@@ -91,9 +94,21 @@ namespace MyCRM.Controllers
 
             if (result.Succeeded)
             {
-                //Log in immediately after registration
-                //await _signInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction("Index", "Home");
+                // Send welcome / verification email to the newly created user (recipient = user.Email)
+                try
+                {
+                    var subject = "Welcome to MyCRM";
+                    var body = $"Hello {user.FullName},<br/><br/>Thank you for registering. You can now log in with your email.<br/><br/>Regards,<br/>MyCRM";
+                    await _emailSender.SendEmailAsync(user.Email, subject, body);
+                }
+                catch
+                {
+                    // Swallow email errors to avoid blocking registration flow; consider logging.
+                }
+
+                // After registration redirect to Login so the user can sign in
+                TempData["SuccessMessage"] = "Registration successful. Please check your email and log in.";
+                return RedirectToAction("Login");
             }
 
             //If registration fails, add model error

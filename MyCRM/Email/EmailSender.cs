@@ -21,7 +21,7 @@ namespace MyCRM.Email
             string password = _configuration["Email:Password"] ?? throw new InvalidOperationException("Email password is not configured.");
 
             var smtpHost = _configuration["Email:SmtpHost"] ?? "smtp.gmail.com";
-            int smtpPort = int.TryParse(_configuration["Email:SmtpPort"], out var p) ? p : 587;
+            int smtpPort = int.TryParse(_configuration["Email:SmtpPort"], out var p) ? p : 587; //p is a variable for the parsed port number, if parsing fails, default to 587
 
             using var mailMessage = new MailMessage
             {
@@ -31,7 +31,7 @@ namespace MyCRM.Email
                 IsBodyHtml = true
             };
 
-            mailMessage.To.Add(email);
+            mailMessage.To.Add(email); //list of recipients, can add multiple of them
 
             using var smtpClient = new SmtpClient(smtpHost, smtpPort)
             {
