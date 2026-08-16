@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace MyCRM.Controllers
 {
-    [Authorize]
+    //[Authorize] //Comment out this attribute, if you want to start from home page
     public class HomeController : Controller
     {
         public IActionResult Index()

@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Net;
-using System.Net.Mail;
 using System.Threading.Tasks;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.Extensions.Configuration;
+using MimeKit;
 
 namespace MyCRM.Email
 {
     public class EmailSender : IEmailSender
     {
-        private readonly IConfiguration _configuration; //field stores the configuration settings -> User Secrets
+        private readonly IConfiguration _configuration;
 
         public EmailSender(IConfiguration configuration)
         {
@@ -17,29 +18,36 @@ namespace MyCRM.Email
 
         public async Task SendEmailAsync(string email, string subject, string message)
         {
-            var sender = _configuration["Email:Sender"] ?? "astanislawska128@gmail.com";
-            string password = _configuration["Email:Password"] ?? throw new InvalidOperationException("Email password is not configured.");
+            var senderAddress = "astanislawska128@gmail.com"; // fixed sender as requested
+            var senderName = _configuration["Email:SenderName"] ?? "MyCRM";
+            var password = _configuration["Email:Password"] ?? throw new InvalidOperationException("Email password is not configured.");
 
             var smtpHost = _configuration["Email:SmtpHost"] ?? "smtp.gmail.com";
-            int smtpPort = int.TryParse(_configuration["Email:SmtpPort"], out var p) ? p : 587; //p is a variable for the parsed port number, if parsing fails, default to 587
+            var smtpPort = int.TryParse(_configuration["Email:SmtpPort"], out var p) ? p : 587;
 
-            using var mailMessage = new MailMessage
+            var messageBuilder = new MimeMessage();
+            messageBuilder.From.Add(new MailboxAddress(senderName, senderAddress));
+            messageBuilder.To.Add(MailboxAddress.Parse(email));
+            messageBuilder.Subject = subject;
+
+            var bodyBuilder = new BodyBuilder { HtmlBody = message };
+            messageBuilder.Body = bodyBuilder.ToMessageBody();
+
+            using var client = new SmtpClient();
+            try
             {
-                From = new MailAddress(sender),
-                Subject = subject,
-                Body = message,
-                IsBodyHtml = true
-            };
+                // Connect with STARTTLS if available
+                await client.ConnectAsync(smtpHost, smtpPort, SecureSocketOptions.StartTls).ConfigureAwait(false);
 
-            mailMessage.To.Add(email); //list of recipients, can add multiple of them
+                // Authenticate using the configured sender and password
+                await client.AuthenticateAsync(senderAddress, password).ConfigureAwait(false);
 
-            using var smtpClient = new SmtpClient(smtpHost, smtpPort)
+                await client.SendAsync(messageBuilder).ConfigureAwait(false);
+            }
+            finally
             {
-                EnableSsl = true,
-                Credentials = new NetworkCredential(sender, password)
-            };
-
-            await smtpClient.SendMailAsync(mailMessage).ConfigureAwait(false);
+                await client.DisconnectAsync(true).ConfigureAwait(false);
+            }
         }
     }
 }
