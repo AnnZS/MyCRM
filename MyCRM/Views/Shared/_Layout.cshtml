@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Users> signInManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +11,23 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyCRM.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="@(signInManager.IsSignedIn(User) ? "has-taskbar" : "")">
+    @if (signInManager.IsSignedIn(User))
+    {
+        <aside class="taskbar" aria-label="Taskbar">
+            <nav class="taskbar__icons">
+                <a class="taskbar__icon" href="#" aria-label="Dashboard" title="Dashboard">icon1</a>
+                <a class="taskbar__icon" href="#" aria-label="Contacts" title="Contacts">icon2</a>
+                <a class="taskbar__icon" href="#" aria-label="Calendar" title="Calendar">icon3</a>
+                <a class="taskbar__icon" href="#" aria-label="Tasks" title="Tasks">icon4</a>
+                <a class="taskbar__icon" href="#" aria-label="Messages" title="Messages">icon5</a>
+                <a class="taskbar__icon" href="#" aria-label="Reports" title="Reports">icon6</a>
+                <a class="taskbar__icon" href="#" aria-label="Files" title="Files">icon7</a>
+                <a class="taskbar__icon" href="#" aria-label="Settings" title="Settings">icon8</a>
+                <a class="taskbar__icon" href="#" aria-label="Help" title="Help">icon9</a>
+            </nav>
+        </aside>
+    }
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
