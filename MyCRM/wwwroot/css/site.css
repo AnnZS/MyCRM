@@ -34,7 +34,11 @@ body {
 
 .navbar-search {
   width: min(100%, 16rem);
-  margin: 0.5rem auto;
+  margin: 0 auto 0 rem;
+}
+
+.navbar-search .form-control {
+    height: 25px;
 }
 
 .navbar-container .navbar-collapse {
