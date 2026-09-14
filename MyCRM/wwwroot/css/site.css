@@ -21,6 +21,30 @@ body {
   margin-bottom: 60px;
 }
 
+.navbar-container {
+  flex-direction: column;
+}
+
+.navbar-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-search {
+  width: min(100%, 16rem);
+  margin: 0.5rem auto;
+}
+
+.navbar-container .navbar-collapse {
+  width: 100%;
+}
+
+.navbar-top-row .navbar-collapse {
+  flex: 1;
+}
+
 .taskbar {
   position: fixed;
   inset: 0 auto 0 0;
