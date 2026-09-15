@@ -27,6 +27,7 @@ body {
 
 .navbar-top-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -34,7 +35,7 @@ body {
 
 .navbar-search {
   width: min(100%, 16rem);
-  margin: 0 auto 0 rem;
+  margin: 0 auto 0.1rem;
 }
 
 .navbar-search .form-control {
@@ -47,6 +48,10 @@ body {
 
 .navbar-top-row .navbar-collapse {
   flex: 1;
+}
+
+.navbar-top-row .navbar-nav .nav-link {
+  font-size: 0.85rem;
 }
 
 .taskbar {
