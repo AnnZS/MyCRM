@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #f3f6f9;
 }
 
 .navbar-container {
@@ -102,6 +103,136 @@ body {
 
 .has-taskbar footer {
   width: calc(100% - 100vw / 24);
+}
+
+.crm-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.5rem 0 2rem;
+}
+
+.crm-space-box,
+.crm-list-card {
+  background-color: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.crm-space-box {
+  display: flex;
+  align-items: center;
+  min-height: 10rem;
+  padding: 1.75rem 2rem;
+  background: linear-gradient(105deg, #fff 0%, #f7fbff 100%);
+}
+
+.crm-space-box__eyebrow,
+.crm-list-card__eyebrow {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #5f6b7a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.crm-space-box h1,
+.crm-list-card h2 {
+  margin: 0;
+  color: #181818;
+  font-weight: 600;
+}
+
+.crm-space-box h1 {
+  font-size: 1.5rem;
+}
+
+.crm-space-box p {
+  margin: 0.45rem 0 0;
+  color: #5f6b7a;
+}
+
+.crm-list-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e5e8ec;
+}
+
+.crm-list-card h2 {
+  font-size: 1.25rem;
+}
+
+.crm-list-card__action {
+  background-color: #0176d3;
+  border-color: #0176d3;
+  font-size: 0.875rem;
+}
+
+.crm-table thead th {
+  padding: 0.8rem 1.5rem;
+  background-color: #f8f9fb;
+  color: #5f6b7a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.crm-table tbody th,
+.crm-table tbody td {
+  padding: 1rem 1.5rem;
+  color: #3e4a59;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.crm-table tbody tr:hover {
+  background-color: #f5faff;
+}
+
+.crm-table tbody a {
+  color: #0176d3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.crm-table tbody a:hover {
+  text-decoration: underline;
+}
+
+.crm-table__menu {
+  border: 0;
+  background: transparent;
+  color: #5f6b7a;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 575.98px) {
+  .crm-space-box {
+    min-height: 8rem;
+    padding: 1.25rem;
+  }
+
+  .crm-list-card__header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .crm-table thead th,
+  .crm-table tbody th,
+  .crm-table tbody td {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {

@@ -1,8 +1,60 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="crm-dashboard">
+    <section class="crm-space-box" aria-label="Przestrzeń robocza">
+        <div>
+            <span class="crm-space-box__eyebrow">MyCRM</span>
+            <h1>Przestrzeń robocza</h1>
+            <p>Wybierz kategorię z paska powyżej, aby rozpocząć pracę.</p>
+        </div>
+    </section>
+
+    <section class="crm-list-card" aria-labelledby="recent-items-heading">
+        <div class="crm-list-card__header">
+            <div>
+                <span class="crm-list-card__eyebrow">Lista rekordów</span>
+                <h2 id="recent-items-heading">Ostatnio przeglądane</h2>
+            </div>
+            <button class="btn btn-primary crm-list-card__action" type="button">Nowy rekord</button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table crm-table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Nazwa</th>
+                        <th scope="col">Typ</th>
+                        <th scope="col">Właściciel</th>
+                        <th scope="col">Ostatnia modyfikacja</th>
+                        <th scope="col"><span class="visually-hidden">Akcje</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">Acme Corporation</a></th>
+                        <td>Klient</td>
+                        <td>Anna Kowalska</td>
+                        <td>dzisiaj, 10:24</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="Więcej opcji dla Acme Corporation">•••</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">Northwind Traders</a></th>
+                        <td>Szansa sprzedaży</td>
+                        <td>Piotr Nowak</td>
+                        <td>wczoraj, 15:40</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="Więcej opcji dla Northwind Traders">•••</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">Contoso Ltd.</a></th>
+                        <td>Kontakt</td>
+                        <td>Anna Kowalska</td>
+                        <td>12.08.2026, 09:15</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="Więcej opcji dla cgvmh">•••</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </div>
