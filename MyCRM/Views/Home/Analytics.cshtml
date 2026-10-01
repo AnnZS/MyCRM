@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "Analytics";
+}
+
+<div class="analytics-page">
+    <section class="analytics-hero" aria-labelledby="analytics-heading">
+        <div>
+            <span class="crm-space-box__eyebrow">Analytics</span>
+            <h1 id="analytics-heading">Reports &amp; Dashboards</h1>
+            <p>View and manage the reports and dashboards used by your team.</p>
+        </div>
+        <div class="analytics-hero__actions">
+            <button class="btn btn-outline-primary" type="button">New Report</button>
+            <button class="btn btn-primary" type="button">New Dashboard</button>
+        </div>
+    </section>
+
+    <section class="crm-list-card analytics-section" aria-labelledby="reports-heading">
+        <div class="crm-list-card__header">
+            <div>
+                <span class="crm-list-card__eyebrow">Reports</span>
+                <h2 id="reports-heading">Recent Reports</h2>
+            </div>
+            <a class="analytics-view-all" href="#reports">View All</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table crm-table analytics-table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Report Name</th>
+                        <th scope="col">Folder</th>
+                        <th scope="col">Last Run</th>
+                        <th scope="col">Created By</th>
+                        <th scope="col"><span class="visually-hidden">Actions</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">Sales Pipeline</a></th>
+                        <td>Public Reports</td>
+                        <td>Today, 10:24 AM</td>
+                        <td>Anna Kowalska</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="More options for Sales Pipeline">•••</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">Lead Conversion</a></th>
+                        <td>Sales Reports</td>
+                        <td>Yesterday, 3:40 PM</td>
+                        <td>Piotr Nowak</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="More options for Lead Conversion">•••</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">Accounts by Industry</a></th>
+                        <td>Public Reports</td>
+                        <td>Aug 12, 2026, 9:15 AM</td>
+                        <td>Anna Kowalska</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="More options for Accounts by Industry">•••</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="crm-list-card analytics-section" aria-labelledby="dashboards-heading">
+        <div class="crm-list-card__header">
+            <div>
+                <span class="crm-list-card__eyebrow">Dashboards</span>
+                <h2 id="dashboards-heading">Recent Dashboards</h2>
+            </div>
+            <a class="analytics-view-all" href="#dashboards">View All</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table crm-table analytics-table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Dashboard Name</th>
+                        <th scope="col">Folder</th>
+                        <th scope="col">Last Modified</th>
+                        <th scope="col">Modified By</th>
+                        <th scope="col"><span class="visually-hidden">Actions</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">Sales Performance</a></th>
+                        <td>Public Dashboards</td>
+                        <td>Today, 9:02 AM</td>
+                        <td>Anna Kowalska</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="More options for Sales Performance">•••</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">Executive Overview</a></th>
+                        <td>Executive Dashboards</td>
+                        <td>Yesterday, 5:10 PM</td>
+                        <td>Piotr Nowak</td>
+                        <td><button class="crm-table__menu" type="button" aria-label="More options for Executive Overview">•••</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>

@@ -61,11 +61,11 @@
                     </button>
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
-                            @for (var category = 1; category <= 7; category++)
+                            @foreach (var category in new[] { "Accounts", "Contacts", "Leads", "Opportunities", "Cases", "Reports", "Dashboards" })
                             {
                                 <li class="nav-item dropdown">
                                     <button class="nav-link dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Kategoria @category
+                                        @category
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Opcja 1</a></li>
@@ -74,7 +74,7 @@
                                 </li>
                             }
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/Analytics">Analytics</a>
+                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Analytics">Analytics</a>
                             </li>
                             <partial name="_LoginPartial"/>
                         </ul>
