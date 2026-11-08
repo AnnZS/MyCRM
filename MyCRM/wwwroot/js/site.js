@@ -1,4 +1,28 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+(() => {
+  const toggle = document.querySelector('.taskbar__toggle');
+  if (!toggle) return;
 
-// Write your JavaScript code.
+  const applyState = (collapsed) => {
+    document.body.classList.toggle('sidebar-collapsed', collapsed);
+    toggle.setAttribute('aria-expanded', String(!collapsed));
+    const label = collapsed ? 'Rozwiń pasek boczny' : 'Zwiń pasek boczny';
+    toggle.setAttribute('aria-label', label);
+    toggle.title = label;
+  };
+
+  try {
+    applyState(localStorage.getItem('mycrm.sidebar.collapsed') === 'true');
+  } catch {
+    applyState(false);
+  }
+  toggle.hidden = false;
+  toggle.addEventListener('click', () => {
+    const collapsed = !document.body.classList.contains('sidebar-collapsed');
+    applyState(collapsed);
+    try {
+      localStorage.setItem('mycrm.sidebar.collapsed', String(collapsed));
+    } catch {
+      // The sidebar remains usable when browser storage is unavailable.
+    }
+  });
+})();
