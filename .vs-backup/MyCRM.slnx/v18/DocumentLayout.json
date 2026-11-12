@@ -1,0 +1,471 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annas\\source\\repos\\MyCRM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-visual-studio-self-host-launch-error.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\.copilot\\plans\\plan-simplify-mycrm-source-code.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-startup-failures-in-mycrm.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\.copilot\\plans\\plan-salesforce-style-navigation-and-analytics-page.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\home\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\home\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\email\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\email\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\email\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\email\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\migrations\\20260801212656_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\migrations\\20260801212656_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\mycrm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\mycrm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|c:\\users\\annas\\source\\repos\\mycrm\\mycrm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E30297-14BF-D6A8-A2CE-D4831CA0581D}|MyCRM\\MyCRM.csproj|solutionrelative:mycrm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\source\\repos\\MyCRM\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annas\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1342250061\\ChangePasswordViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "plan-diagnose-visual-studio-self-host-launch-error.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-visual-studio-self-host-launch-error.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-diagnose-visual-studio-self-host-launch-error.md",
+              "ToolTip": "C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-visual-studio-self-host-launch-error.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-diagnose-visual-studio-self-host-launch-error.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-12T21:50:32.741Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "plan-simplify-mycrm-source-code.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\annas\\.copilot\\plans\\plan-simplify-mycrm-source-code.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-simplify-mycrm-source-code.md",
+              "ToolTip": "C:\\Users\\annas\\.copilot\\plans\\plan-simplify-mycrm-source-code.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-simplify-mycrm-source-code.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-12T21:43:10.744Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1342250061\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1342250061\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\annas\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1342250061\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1342250061\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T21:39:25.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "plan-diagnose-startup-failures-in-mycrm.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-startup-failures-in-mycrm.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-diagnose-startup-failures-in-mycrm.md",
+              "ToolTip": "C:\\Users\\annas\\.copilot\\plans\\plan-diagnose-startup-failures-in-mycrm.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-diagnose-startup-failures-in-mycrm.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-11T23:07:49.962Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "plan-salesforce-style-navigation-and-analytics-page.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\annas\\.copilot\\plans\\plan-salesforce-style-navigation-and-analytics-page.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-salesforce-style-navigation-and-analytics-page.md",
+              "ToolTip": "C:\\Users\\annas\\.copilot\\plans\\plan-salesforce-style-navigation-and-analytics-page.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-salesforce-style-navigation-and-analytics-page.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-08T18:44:18.336Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Analytics.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Analytics.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Home\\Analytics.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Analytics.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Home\\Analytics.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T21:56:39.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\appsettings.json",
+              "RelativeDocumentMoniker": "MyCRM\\appsettings.json",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\appsettings.json",
+              "RelativeToolTip": "MyCRM\\appsettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-31T15:03:51.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MyCRM\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MyCRM\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-16T18:46:12.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Email\\EmailSender.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Email\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Email\\EmailSender.cs",
+              "RelativeToolTip": "MyCRM\\Email\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-16T20:58:15.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-06T23:08:17.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-29T20:30:19.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-14T21:57:12.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MyCRM\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MyCRM\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-29T20:24:43.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MyCRM\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAIBJwAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T18:20:18.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MyCRM\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T21:19:03.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MyCRM\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T21:28:26.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Program.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Program.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Program.cs",
+              "RelativeToolTip": "MyCRM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T20:24:35.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Email\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Email\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Email\\IEmailSender.cs",
+              "RelativeToolTip": "MyCRM\\Email\\IEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-16T20:59:09.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAADgvx4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T18:20:28.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "MyCRM\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "MyCRM\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T16:01:34.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MyCRM\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T20:30:12.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T20:58:22.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-06T21:02:02.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Models\\Users.cs",
+              "RelativeToolTip": "MyCRM\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T22:05:11.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260801212656_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Migrations\\20260801212656_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MyCRM\\Migrations\\20260801212656_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Migrations\\20260801212656_InitialCreate.cs",
+              "RelativeToolTip": "MyCRM\\Migrations\\20260801212656_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T21:26:56.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MyCRM.csproj",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\MyCRM.csproj",
+              "RelativeDocumentMoniker": "MyCRM\\MyCRM.csproj",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\MyCRM.csproj",
+              "RelativeToolTip": "MyCRM\\MyCRM.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-29T22:02:37.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MyCRM\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MyCRM\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-29T20:30:23.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "MyCRM\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\annas\\source\\repos\\MyCRM\\MyCRM\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MyCRM\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-29T20:24:55.617Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

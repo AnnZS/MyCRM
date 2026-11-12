@@ -1,0 +1,245 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #f3f6f9;
+}
+
+.navbar-container {
+  flex-direction: column;
+}
+
+.navbar-top-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-search {
+  width: min(100%, 16rem);
+  margin: 0 auto 0.1rem;
+}
+
+.navbar-search .form-control {
+    height: 25px;
+}
+
+.navbar-container .navbar-collapse {
+  width: 100%;
+}
+
+.navbar-top-row .navbar-collapse {
+  flex: 1;
+}
+
+.navbar-top-row .navbar-nav .nav-link {
+  font-size: 0.85rem;
+}
+
+.taskbar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 1030;
+  display: flex;
+  justify-content: center;
+  width: calc(100vw / 24);
+  height: 100vh;
+  background-color: #002276;
+}
+
+.taskbar__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 75%;
+  margin-top: 5vh;
+  padding: 0 0.35vw;
+}
+
+.taskbar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  color: #fff;
+  font-size: clamp(1rem, 1.7vw, 1.75rem);
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 0.35rem;
+}
+
+.taskbar__icon:hover,
+.taskbar__icon:focus-visible {
+  color: #002276;
+  background-color: #fff;
+}
+
+.has-taskbar header,
+.has-taskbar .container,
+.has-taskbar footer {
+  margin-left: calc(100vw / 24);
+}
+
+.has-taskbar footer {
+  width: calc(100% - 100vw / 24);
+}
+
+.crm-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.5rem 0 2rem;
+}
+
+.crm-space-box,
+.crm-list-card {
+  background-color: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.crm-space-box {
+  display: flex;
+  align-items: center;
+  min-height: 10rem;
+  padding: 1.75rem 2rem;
+  background: linear-gradient(105deg, #fff 0%, #f7fbff 100%);
+}
+
+.crm-space-box__eyebrow,
+.crm-list-card__eyebrow {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #5f6b7a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.crm-space-box h1,
+.crm-list-card h2 {
+  margin: 0;
+  color: #181818;
+  font-weight: 600;
+}
+
+.crm-space-box h1 {
+  font-size: 1.5rem;
+}
+
+.crm-space-box p {
+  margin: 0.45rem 0 0;
+  color: #5f6b7a;
+}
+
+.crm-list-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e5e8ec;
+}
+
+.crm-list-card h2 {
+  font-size: 1.25rem;
+}
+
+.crm-list-card__action {
+  background-color: #0176d3;
+  border-color: #0176d3;
+  font-size: 0.875rem;
+}
+
+.crm-table thead th {
+  padding: 0.8rem 1.5rem;
+  background-color: #f8f9fb;
+  color: #5f6b7a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.crm-table tbody th,
+.crm-table tbody td {
+  padding: 1rem 1.5rem;
+  color: #3e4a59;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.crm-table tbody tr:hover {
+  background-color: #f5faff;
+}
+
+.crm-table tbody a {
+  color: #0176d3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.crm-table tbody a:hover {
+  text-decoration: underline;
+}
+
+.crm-table__menu {
+  border: 0;
+  background: transparent;
+  color: #5f6b7a;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 575.98px) {
+  .crm-space-box {
+    min-height: 8rem;
+    padding: 1.25rem;
+  }
+
+  .crm-list-card__header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .crm-table thead th,
+  .crm-table tbody th,
+  .crm-table tbody td {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}

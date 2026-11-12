@@ -1,0 +1,21 @@
+﻿using System.Threading.Tasks;
+
+namespace MyCRM.Email
+{
+    /// <summary>
+    /// Abstraction for sending e-mail messages. Implementations should send
+    /// the message to the specified recipient and return a Task that completes
+    /// when the send operation finishes.
+    /// </summary>
+    public interface IEmailSender
+    {
+        /// <summary>
+        /// Sends an e-mail message asynchronously.
+        /// </summary>
+        /// <param name="email">Recipient e-mail address.</param>
+        /// <param name="subject">Message subject.</param>
+        /// <param name="message">Message body (may contain HTML).</param>
+        /// <returns>A task that represents the asynchronous send operation.</returns>
+        Task SendEmailAsync(string email, string subject, string message);
+    }
+}

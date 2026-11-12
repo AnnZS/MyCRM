@@ -93,21 +93,7 @@ namespace MyCRM.Controllers
 
             if (result.Succeeded)
             {
-                // Generate email confirmation token and send confirmation link
-                var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                var encodedToken = WebUtility.UrlEncode(token);
-                var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = encodedToken }, protocol: Request.Scheme);
-
-                try
-                {
-                    var subject = "Confirm your MyCRM account";
-                    var body = $"Hello {user.FullName},<br/><br/>Thank you for registering. Please confirm your account by <a href=\"{callbackUrl}\">clicking here</a>.<br/><br/>Regards,<br/>MyCRM";
-                    await _emailSender.SendEmailAsync(user.Email, subject, body);
-                }
-                catch
-                {
-                    // Do not block registration on email failure; consider logging the error
-                }
+                await TrySendConfirmationEmailAsync(user, "Thank you for registering. Please confirm your account by");
 
                 TempData["SuccessMessage"] = "Registration successful. Please check your email to confirm your account.";
                 return RedirectToAction("Login");
@@ -143,20 +129,7 @@ namespace MyCRM.Controllers
                 return RedirectToAction("VerifyEmail");
             }
 
-            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            var encodedToken = WebUtility.UrlEncode(token);
-            var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = encodedToken }, protocol: Request.Scheme);
-
-            try
-            {
-                var subject = "Confirm your MyCRM account";
-                var body = $"Hello {user.FullName},<br/><br/>Please confirm your account by <a href=\"{callbackUrl}\">clicking here</a>.<br/><br/>Regards,<br/>MyCRM";
-                await _emailSender.SendEmailAsync(user.Email, subject, body);
-            }
-            catch
-            {
-                // Swallow email errors; consider logging
-            }
+            await TrySendConfirmationEmailAsync(user, "Please confirm your account by");
 
             TempData["SuccessMessage"] = "Confirmation email sent. Please check your inbox.";
             return RedirectToAction("VerifyEmail");
@@ -186,6 +159,23 @@ namespace MyCRM.Controllers
 
             TempData["ErrorMessage"] = "Error confirming your email.";
             return RedirectToAction("Login");
+        }
+
+        private async Task TrySendConfirmationEmailAsync(Users user, string introduction)
+        {
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var encodedToken = WebUtility.UrlEncode(token);
+            var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = encodedToken }, protocol: Request.Scheme);
+            var body = $"Hello {user.FullName},<br/><br/>{introduction} <a href=\"{callbackUrl}\">clicking here</a>.<br/><br/>Regards,<br/>MyCRM";
+
+            try
+            {
+                await _emailSender.SendEmailAsync(user.Email, "Confirm your MyCRM account", body);
+            }
+            catch
+            {
+                // Email delivery should not block account confirmation.
+            }
         }
     }
 }
