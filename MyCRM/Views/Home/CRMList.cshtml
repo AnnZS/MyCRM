@@ -1,0 +1,40 @@
+@model MyCRM.ViewModels.CrmListViewModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="crm-dashboard">
+    <section class="crm-list-card" aria-labelledby="crm-list-heading">
+        <div class="crm-list-card__header">
+            <h1 id="crm-list-heading" class="h4 mb-0">@Model.Title</h1>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table crm-table align-middle mb-0" aria-labelledby="crm-list-heading">
+                <thead>
+                    <tr>
+                        @foreach (var column in Model.Columns)
+                        {
+                            <th scope="col">@column</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in Model.Rows)
+                    {
+                        <tr>
+                            @foreach (var cell in row)
+                            {
+                                <td>@cell</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @if (Model.Rows.Count == 0)
+        {
+            <p class="crm-list-card__empty mb-0">@Model.EmptyMessage</p>
+        }
+    </section>
+</div>
