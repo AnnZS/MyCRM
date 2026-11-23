@@ -1,8 +1,23 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<Users> signInManager
 @{
-    var showSidebar = signInManager.IsSignedIn(User) ||
-        string.Equals(ViewContext.RouteData.Values["controller"]?.ToString(), "Home", StringComparison.OrdinalIgnoreCase);
+    var isHomeController = string.Equals(ViewContext.RouteData.Values["controller"]?.ToString(), "Home", StringComparison.OrdinalIgnoreCase);
+    var showSidebar = signInManager.IsSignedIn(User) || isHomeController;
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var navigation = new (string Action, string Label)[]
+    {
+        ("Index", "Sales"),
+        ("Leads", "Leads"),
+        ("Contacts", "Contacts"),
+        ("Accounts", "Accounts"),
+        ("Opportunities", "Opportunities"),
+        ("Products", "Products"),
+        ("PriceBooks", "Price Books"),
+        ("Calendar", "Calendar"),
+        ("Cases", "Cases"),
+        ("Campaigns", "Campaigns"),
+        ("Analytics", "Analytics")
+    };
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +36,7 @@
         <partial name="_Sidebar" />
     }
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-xl navbar-light bg-white border-bottom box-shadow mb-3" aria-label="CRM navigation">
             <div class="container-fluid navbar-container">
                 <div class="navbar-search">
                     <label class="visually-hidden" for="site-search">Search</label>
@@ -29,32 +44,22 @@
                 </div>
                 <div class="navbar-top-row">
                     <span class="navbar-brand">MyCRM</span>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#crm-top-navigation" aria-controls="crm-top-navigation"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <div id="crm-top-navigation" class="navbar-collapse collapse">
                         <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Sales</a>
-                            </li>
-                            @foreach (var category in new[] { "Leads", "Contacts", "Accounts", "Opportunities", "Products", "Price Books", "Calendar" })
+                            @foreach (var item in navigation)
                             {
-                                <li class="nav-item dropdown">
-                                    <button class="nav-link dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        @category
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Opcja 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Opcja 2</a></li>
-                                    </ul>
+                                var isCurrent = isHomeController && string.Equals(currentAction, item.Action, StringComparison.OrdinalIgnoreCase);
+                                <li class="nav-item">
+                                    <a class="nav-link @(isCurrent ? "active" : "")" asp-controller="Home" asp-action="@item.Action"
+                                       aria-current="@(isCurrent ? "page" : null)">@item.Label</a>
                                 </li>
                             }
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Analytics">Analytics</a>
-                            </li>
-                            <partial name="_LoginPartial"/>
                         </ul>
+                        <partial name="_LoginPartial" />
                     </div>
                 </div>
             </div>
